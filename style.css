@@ -1,0 +1,56 @@
+div {
+	/*padding: 0!important;*/
+}
+p {
+	text-align: justify;
+}
+
+nav {
+	background-color: var(--dark);
+}
+nav ul {
+	height: 40px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav ul > a > li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 5px 25px;
+}
+
+nav ul > a:last-child > li {
+	float: right;
+}
+
+nav ul > a{
+	color: var(--white);
+	text-shadow: 0 1px 1px var(--light);
+}
+nav ul > a:hover {
+	color: var(--light);
+}
+nav ul > a:hover > li {
+	border-bottom: 1px solid var(--light);
+}
+nav ul > a.active {
+	color: var(--light);
+}
+.menu {
+	background-color: var(--darktransparent);
+}
+
+@media screen and (min-width: 455px){
+	.menu{
+		height: 900px;
+	}
+}
+
+@media screen and (max-width: 455px){
+	.menu{
+		height: 200px;
+	}
+}

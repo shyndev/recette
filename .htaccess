@@ -1,0 +1,11 @@
+Options All -Indexes
+Options +FollowSymlinks
+IndexIgnore *
+RewriteEngine On
+ServerSignature Off
+
+# site web
+RewriteRule ^recettes-([A-Za-z.-]+)?$ /recette/index.php?categorie=$1
+RewriteRule ^setting$ /recette/index.php?setting=true
+
+RewriteRule ^plat-chaud-([0-9]+)?-([0-9A-Za-z.-]+)?$ /recette/index.php?categorie=plat-chaud&recette=$1
